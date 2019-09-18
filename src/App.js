@@ -22,8 +22,10 @@ componentDidMount(){
     this.GetallData()
 }
 ChangeOpetions = (book, shelf ) => {
-  BooksAPI.update(book, shelf)
-  this.GetallData()
+  BooksAPI.update(book, shelf).then(()=>{
+    this.GetallData()
+  })
+  
   
 }
 

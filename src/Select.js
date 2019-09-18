@@ -23,7 +23,7 @@ class Select extends Component {
 
 
     render() {
-        let status = ''
+        let status = 'none'
         const { book, single, BooksHome } = this.props
 
 
